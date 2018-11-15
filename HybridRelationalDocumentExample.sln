@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.DataAccessLayer.Implementation", "Hrde.DataAccessLayer.Implementation\Hrde.DataAccessLayer.Implementation.csproj", "{036268E3-1C40-478E-9082-C7654ED49BE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{35760CEF-70CA-4E36-BCD4-C55E1824B0AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RepositoryLayer", "RepositoryLayer", "{CC671490-EFB3-49EF-97F0-FD888E3D2F20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{C4D76F45-953F-4065-A0C6-C2CEA8EB34D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.DataAccessLayer.Abstractions", ".\Hrde.DataAccessLayer.Abstractions\Hrde.DataAccessLayer.Abstractions.csproj", "{BD44B264-9F55-49C2-A369-89807F73371E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.RepositoryLayer.Implementation", ".\Hrde.RepositoryLayer.Implementation\Hrde.RepositoryLayer.Implementation.csproj", "{601F5B28-1626-4BBD-823B-E535D248B263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.RepositoryLayer.Abstractions", ".\Hrde.RepositoryLayer.Abstractions\Hrde.RepositoryLayer.Abstractions.csproj", "{9B385DD9-4A36-4A3A-891E-29382250C516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.DataAccessLayer.Tests.Integration", ".\Hrde.DataAccessLayer.Tests.Integration\Hrde.DataAccessLayer.Tests.Integration.csproj", "{60C88F5B-629C-48CB-B654-84322F565D88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.DataAccessLayer.Tests.Unit", ".\Hrde.DataAccessLayer.Tests.Unit\Hrde.DataAccessLayer.Tests.Unit.csproj", "{17FC5016-1559-490D-B635-D6933B101209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.RepositoryLayer.Tests.Integration", ".\Hrde.RepositoryLayer.Tests.Integration\Hrde.RepositoryLayer.Tests.Integration.csproj", "{879A64ED-C252-4AE8-9078-9A41AB334259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hrde.RepositoryLayer.Tests.Unit", ".\Hrde.RepositoryLayer.Tests.Unit\Hrde.RepositoryLayer.Tests.Unit.csproj", "{A4871076-73E2-4711-B4DA-7DB8F84AFB9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036268E3-1C40-478E-9082-C7654ED49BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036268E3-1C40-478E-9082-C7654ED49BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036268E3-1C40-478E-9082-C7654ED49BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036268E3-1C40-478E-9082-C7654ED49BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD44B264-9F55-49C2-A369-89807F73371E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD44B264-9F55-49C2-A369-89807F73371E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD44B264-9F55-49C2-A369-89807F73371E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD44B264-9F55-49C2-A369-89807F73371E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{601F5B28-1626-4BBD-823B-E535D248B263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{601F5B28-1626-4BBD-823B-E535D248B263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{601F5B28-1626-4BBD-823B-E535D248B263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{601F5B28-1626-4BBD-823B-E535D248B263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B385DD9-4A36-4A3A-891E-29382250C516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B385DD9-4A36-4A3A-891E-29382250C516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B385DD9-4A36-4A3A-891E-29382250C516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B385DD9-4A36-4A3A-891E-29382250C516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C88F5B-629C-48CB-B654-84322F565D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C88F5B-629C-48CB-B654-84322F565D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C88F5B-629C-48CB-B654-84322F565D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C88F5B-629C-48CB-B654-84322F565D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FC5016-1559-490D-B635-D6933B101209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FC5016-1559-490D-B635-D6933B101209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FC5016-1559-490D-B635-D6933B101209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FC5016-1559-490D-B635-D6933B101209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{879A64ED-C252-4AE8-9078-9A41AB334259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{879A64ED-C252-4AE8-9078-9A41AB334259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{879A64ED-C252-4AE8-9078-9A41AB334259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{879A64ED-C252-4AE8-9078-9A41AB334259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4871076-73E2-4711-B4DA-7DB8F84AFB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4871076-73E2-4711-B4DA-7DB8F84AFB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4871076-73E2-4711-B4DA-7DB8F84AFB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4871076-73E2-4711-B4DA-7DB8F84AFB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{036268E3-1C40-478E-9082-C7654ED49BE6} = {35760CEF-70CA-4E36-BCD4-C55E1824B0AD}
+		{BD44B264-9F55-49C2-A369-89807F73371E} = {35760CEF-70CA-4E36-BCD4-C55E1824B0AD}
+		{601F5B28-1626-4BBD-823B-E535D248B263} = {CC671490-EFB3-49EF-97F0-FD888E3D2F20}
+		{9B385DD9-4A36-4A3A-891E-29382250C516} = {CC671490-EFB3-49EF-97F0-FD888E3D2F20}
+		{60C88F5B-629C-48CB-B654-84322F565D88} = {35760CEF-70CA-4E36-BCD4-C55E1824B0AD}
+		{17FC5016-1559-490D-B635-D6933B101209} = {35760CEF-70CA-4E36-BCD4-C55E1824B0AD}
+		{879A64ED-C252-4AE8-9078-9A41AB334259} = {CC671490-EFB3-49EF-97F0-FD888E3D2F20}
+		{A4871076-73E2-4711-B4DA-7DB8F84AFB9F} = {CC671490-EFB3-49EF-97F0-FD888E3D2F20}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ECB21B1-A52D-4711-A4CD-4857C5E92161}
+	EndGlobalSection
+EndGlobal

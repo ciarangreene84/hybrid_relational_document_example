@@ -1,0 +1,64 @@
+﻿using Hrde.DataAccessLayer.Abstractions.DbContexts;
+using Hrde.DataAccessLayer.Abstractions.Models;
+using Hrde.RepositoryLayer.Abstractions.Repositories;
+using Hrde.RepositoryLayer.Implementation.Serialization;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Data;
+using System.Threading.Tasks;
+using DalModels = Hrde.DataAccessLayer.Abstractions.Models;
+using RepoModels = Hrde.RepositoryLayer.Abstractions.Models;
+
+namespace Hrde.RepositoryLayer.Implementation.Repositories
+{
+    public class AccountsRepository : IAccountsRepository
+    {
+        private readonly ILogger<AccountsRepository> _logger;
+
+        private readonly ObjectDocumentSerializer _objectDocumentSerializer;
+        private readonly IAccountsDbContext _dbContext;
+
+        public AccountsRepository(ILogger<AccountsRepository> logger, ObjectDocumentSerializer objectDocumentSerializer, IAccountsDbContext dbContext)
+        {
+            this._logger = logger;
+
+            this._dbContext = dbContext;
+            this._objectDocumentSerializer = objectDocumentSerializer;
+        }
+
+        public async Task<IEnumerable<T>> GetAccountsAsync<T>(IDbConnection dbConnection) where T : Account
+        {
+            _logger.LogInformation($"Getting accounts...");
+            var dalObject = await this._dbContext.GetAccountsAsync(dbConnection);
+            return this._objectDocumentSerializer.Deserialize<DalModels.Account, T>(dalObject);
+        }
+
+        public async Task<IEnumerable<T>> GetAccountsByTypeAsync<T>(IDbConnection dbConnection, string accountType) where T : Account
+        {
+            _logger.LogInformation($"Getting accounts...");
+            var dalObject = await this._dbContext.GetAccountsByTypeAsync(dbConnection, accountType);
+            return this._objectDocumentSerializer.Deserialize<DalModels.Account, T>(dalObject);
+        }
+
+        public async Task<int> InsertAccountAsync<T>(IDbTransaction dbTransaction, T account) where T : Account
+        {
+            _logger.LogInformation($"Inserting account '{account}'...");
+            var dalObject = this._objectDocumentSerializer.Serialize<T, DalModels.Account>(account);
+            return await this._dbContext.InsertAccountAsync(dbTransaction, dalObject);
+        }
+
+        public async Task<bool> UpdateAccountAsync<T>(IDbTransaction dbTransaction, T account) where T : Account
+        {
+            _logger.LogInformation($"Updating account '{account}'...");
+            var dalObject = this._objectDocumentSerializer.Serialize<T, DalModels.Account>(account);
+            return await this._dbContext.UpdateAccountAsync(dbTransaction, dalObject);
+        }
+
+        public async Task<bool> DeleteAccountAsync<T>(IDbTransaction dbTransaction, T account) where T : Account
+        {
+            _logger.LogInformation($"Deleting account '{account}'...");
+            var dalObject = this._objectDocumentSerializer.Serialize<T, DalModels.Account>(account);
+            return await this._dbContext.DeleteAccountAsync(dbTransaction, dalObject);
+        }
+    }
+}
