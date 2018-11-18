@@ -24,7 +24,6 @@ namespace Hrde.DataAccessLayer.Implementation.DbContexts
         public async Task<IEnumerable<Account>> GetAccountsAsync(IDbConnection dbConnection)
         {
             _logger.LogInformation("Getting all accounts...");
-
             var items = await dbConnection.GetAllAsync<Models.Account>();
             return _mapper.Map<IEnumerable<Account>>(items);
         }
@@ -32,7 +31,6 @@ namespace Hrde.DataAccessLayer.Implementation.DbContexts
         public async Task<IEnumerable<Account>> GetAccountsByTypeAsync(IDbConnection dbConnection, string accountType)
         {
             _logger.LogInformation("Getting all accounts...");
-
             var items = await dbConnection.QueryAsync<Models.Account>("SELECT * FROM Accounts WHERE Type = @Type", new { Type = accountType});
             return _mapper.Map<IEnumerable<Account>>(items);
         }
