@@ -1,6 +1,6 @@
 # Hybrid Relational/Document Database Example
 
-The purpose of this repo is to provide an example of a hybrid relational/document database which was sketched as a proof of concept/experiment.
+The purpose of this repo is to provide an example of a hybrid relational/document database which was sketched as a proof of concept/experiment. This example uses C# and MS SQL 2016.
 
 ## Problem
 
@@ -15,6 +15,11 @@ Relational databases can provide strict rules, but with the downside that they a
 Document database exist on the other end of the spectrum. They are highly flexible and easier to change, but ensuring the integrity of the data is more difficult than in relational databases.
 
 This example solution to problem is to create a hybrid relational/document database. Those properties which are *universal* can be stored in a relational way and anything which is *specific* can be stored in a document.
+
+## Downsides
+
+Such a hybrid is never going to be as fast as either a purely relational or document database. Understanding how entites are packed and unpacked from the database, while not overly complex, requires care and attention. 
+ 
 
 ![Relational/Document split example](Example.png)
 
