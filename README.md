@@ -40,3 +40,5 @@ There will be two representations of each entity. One represents the entity as i
 
 In the above example, we have an Account entity. In the data access layer (and database), we have an AccountId, Type, Name, ObjectDocument and ObjectHash. The AccountId, Type and Name are *universal* properties, meaning that *all* deployments of the system will have Accounts with those properties.
 
+We also have two types of Account; a CustomerAccount and a CorporateAccount. Both of these inherit from the base Repository.Account and therefore have the universal properties. However the CustomerAccount has a DateOfBirth, Nationality and Sex, whereas the CorporateAccount has a BusinessNumber. The properties of the descendent classes are stored in the ObjectDocument.
+
