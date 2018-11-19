@@ -6,11 +6,8 @@ The purpose of this repo is to provide an example of a hybrid relational/documen
 
 1. Clone/download this repo.
 2. Create the database by either:
-
-  * Open the solution in Visual Studio and publish the database project to a HRDE database on your localhost.
-
-  * Create a HRDE on your localhost and execute the ./Hrde.Database/dbo/Tables/Accounts.sql script.
-
+    * Open the solution in Visual Studio and publish the database project to a HRDE database on your localhost.
+    * Create a HRDE on your localhost and execute the ./Hrde.Database/dbo/Tables/Accounts.sql script.
 3. Open the solution in Visual Studio and run all unit tests.
 
 ## Problem
