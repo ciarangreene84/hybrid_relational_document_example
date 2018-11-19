@@ -16,11 +16,13 @@ Document database exist on the other end of the spectrum. They are highly flexib
 
 This example solution to problem is to create a hybrid relational/document database. Those properties which are *universal* can be stored in a relational way and anything which is *specific* can be stored in a document.
 
+![Relational/Document split example](Example.png)
+
 ## Downsides
 
 Such a hybrid is never going to be as fast as either a purely relational or document database. Understanding how entites are packed and unpacked from the database, while not overly complex, requires care and attention. 
  
 
-![Relational/Document split example](Example.png)
+
 
 ![Object Document Container Explaination](ObjectDocumentContainerExplaination.png)
