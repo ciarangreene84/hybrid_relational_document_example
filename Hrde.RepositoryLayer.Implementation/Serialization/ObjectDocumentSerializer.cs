@@ -22,6 +22,7 @@ namespace Hrde.RepositoryLayer.Implementation.Serialization
 
             _settings = new JsonSerializerSettings
             {
+                // Do *not* serialize the base/universal properties
                 ContractResolver = new IgnoreNamespacePropertiesResolver("Hrde.RepositoryLayer.Interfaces.Models")
             };
         }

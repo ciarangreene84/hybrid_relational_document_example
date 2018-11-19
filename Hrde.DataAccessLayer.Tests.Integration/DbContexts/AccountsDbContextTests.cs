@@ -64,6 +64,7 @@ namespace Hrde.DataAccessLayer.Tests.Integration.DbContexts
         public async void InsertAccountAsync()
         {
             var newItem = GF.New<Account>();
+            newItem.Type = "DataAccessLayerBase";
             using (var dbConnection = new SqlConnection(_connectionString))
             {
                 var items = (await _dbContext.GetAccountsAsync(dbConnection)).ToList();

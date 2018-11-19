@@ -43,9 +43,9 @@ namespace Hrde.RepositoryLayer.Tests.Integration.Serialization
         }
 
         [Fact]
-        public void Deserialize_TestModel()
+        public void Deserialize_AsTestModel()
         {
-            _logger.LogInformation("Deserialize_TestModel");
+            _logger.LogInformation("Deserialize_AsTestModel");
             var item = GF.New<DalModels.Account>();
             item.ObjectDocument = @"
 {
@@ -65,9 +65,9 @@ namespace Hrde.RepositoryLayer.Tests.Integration.Serialization
         }
 
         [Fact]
-        public void Deserialize_RepositoryModel()
+        public void Deserialize_AsRepositoryModel()
         {
-            _logger.LogInformation("Deserialize_RepositoryModel");
+            _logger.LogInformation("Deserialize_AsRepositoryModel");
             var item = GF.New<DalModels.Account>();
             item.ObjectDocument = @"
 {
