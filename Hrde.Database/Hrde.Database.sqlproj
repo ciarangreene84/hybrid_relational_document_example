@@ -65,5 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SqlSchemaCompare.scmp" />
+    <None Include="Hrde.Database.publish.xml" />
   </ItemGroup>
 </Project>

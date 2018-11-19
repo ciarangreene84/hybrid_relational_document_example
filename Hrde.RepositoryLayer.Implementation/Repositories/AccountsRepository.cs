@@ -1,13 +1,12 @@
-﻿using Hrde.DataAccessLayer.Abstractions.DbContexts;
-using Hrde.DataAccessLayer.Abstractions.Models;
-using Hrde.RepositoryLayer.Abstractions.Repositories;
+﻿using Hrde.DataAccessLayer.Interfaces.DbContexts;
 using Hrde.RepositoryLayer.Implementation.Serialization;
+using Hrde.RepositoryLayer.Interfaces.Models;
+using Hrde.RepositoryLayer.Interfaces.Repositories;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
-using DalModels = Hrde.DataAccessLayer.Abstractions.Models;
-using RepoModels = Hrde.RepositoryLayer.Abstractions.Models;
+using DalModels = Hrde.DataAccessLayer.Interfaces.Models;
 
 namespace Hrde.RepositoryLayer.Implementation.Repositories
 {

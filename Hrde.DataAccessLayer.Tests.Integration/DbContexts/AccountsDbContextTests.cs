@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Hrde.DataAccessLayer.Abstractions.DbContexts;
-using Hrde.DataAccessLayer.Abstractions.Models;
+using Hrde.DataAccessLayer.Interfaces.DbContexts;
+using Hrde.DataAccessLayer.Interfaces.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;

@@ -1,4 +1,4 @@
-﻿using Hrde.DataAccessLayer.Abstractions.Models;
+﻿using Hrde.DataAccessLayer.Interfaces.Models;
 using GF = GenFu.GenFu;
 
 namespace Hrde.DataAccessLayer.Tests.Integration

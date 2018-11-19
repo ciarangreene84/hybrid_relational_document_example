@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RepositoryLayer", "Reposito
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{C4D76F45-953F-4065-A0C6-C2CEA8EB34D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hrde.DataAccessLayer.Abstractions", "Hrde.DataAccessLayer.Abstractions\Hrde.DataAccessLayer.Abstractions.csproj", "{BD44B264-9F55-49C2-A369-89807F73371E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hrde.DataAccessLayer.Interfaces", "Hrde.DataAccessLayer.Abstractions\Hrde.DataAccessLayer.Interfaces.csproj", "{BD44B264-9F55-49C2-A369-89807F73371E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hrde.RepositoryLayer.Implementation", "Hrde.RepositoryLayer.Implementation\Hrde.RepositoryLayer.Implementation.csproj", "{601F5B28-1626-4BBD-823B-E535D248B263}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hrde.RepositoryLayer.Abstractions", "Hrde.RepositoryLayer.Abstractions\Hrde.RepositoryLayer.Abstractions.csproj", "{9B385DD9-4A36-4A3A-891E-29382250C516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hrde.RepositoryLayer.Interfaces", "Hrde.RepositoryLayer.Abstractions\Hrde.RepositoryLayer.Interfaces.csproj", "{9B385DD9-4A36-4A3A-891E-29382250C516}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hrde.DataAccessLayer.Tests.Integration", "Hrde.DataAccessLayer.Tests.Integration\Hrde.DataAccessLayer.Tests.Integration.csproj", "{60C88F5B-629C-48CB-B654-84322F565D88}"
 EndProject

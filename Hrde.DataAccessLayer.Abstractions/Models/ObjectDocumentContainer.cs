@@ -1,4 +1,4 @@
-﻿namespace Hrde.DataAccessLayer.Abstractions.Models
+﻿namespace Hrde.DataAccessLayer.Interfaces.Models
 {
     public class ObjectDocumentContainer
     {

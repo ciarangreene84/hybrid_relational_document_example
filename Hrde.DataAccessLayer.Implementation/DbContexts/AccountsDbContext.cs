@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Dapper;
 using Dapper.Contrib.Extensions;
-using Hrde.DataAccessLayer.Abstractions.DbContexts;
-using Hrde.DataAccessLayer.Abstractions.Models;
+using Hrde.DataAccessLayer.Interfaces.DbContexts;
+using Hrde.DataAccessLayer.Interfaces.Models;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Data;

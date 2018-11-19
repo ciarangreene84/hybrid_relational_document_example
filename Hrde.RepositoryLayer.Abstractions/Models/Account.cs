@@ -1,4 +1,4 @@
-﻿namespace Hrde.RepositoryLayer.Abstractions.Models
+﻿namespace Hrde.RepositoryLayer.Interfaces.Models
 {
     public class Account 
     {

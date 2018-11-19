@@ -1,9 +1,9 @@
-﻿using Hrde.DataAccessLayer.Abstractions.Models;
+﻿using Hrde.DataAccessLayer.Interfaces.Models;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 
-namespace Hrde.DataAccessLayer.Abstractions.DbContexts
+namespace Hrde.DataAccessLayer.Interfaces.DbContexts
 {
     public interface IAccountsDbContext
     {

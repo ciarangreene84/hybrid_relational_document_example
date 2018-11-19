@@ -1,5 +1,5 @@
 ﻿using Dapper.Contrib.Extensions;
-using Hrde.DataAccessLayer.Abstractions.Models;
+using Hrde.DataAccessLayer.Interfaces.Models;
 
 namespace Hrde.DataAccessLayer.Implementation.Models
 {
