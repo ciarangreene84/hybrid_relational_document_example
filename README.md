@@ -42,3 +42,19 @@ In the above example, we have an Account entity. In the data access layer (and d
 
 We also have two types of Account; a CustomerAccount and a CorporateAccount. Both of these inherit from the base Repository.Account and therefore have the universal properties. However the CustomerAccount has a DateOfBirth, Nationality and Sex, whereas the CorporateAccount has a BusinessNumber. The properties of the descendent classes are stored in the ObjectDocument.
 
+## IObjectDocumentSerializer
+
+The IObjectDocumentSerializer is responsible for packing and unpacking any non-universal properties. Note that the non-universal properties are serialized as JSON and that the universal properties are *not* serialized.
+
+```C#
+ public interface IObjectDocumentSerializer
+ {
+     T2 Deserialize<T1, T2>(T1 objectDocumentContainer) where T1 : ObjectDocumentContainer;
+     IEnumerable<T2> Deserialize<T1, T2>(IEnumerable<T1> objectDocumentContainers) where T1 : ObjectDocumentContainer;
+
+     T2 Serialize<T1, T2>(T1 repositoryObject) where T2 : ObjectDocumentContainer;
+ }
+```
+
+The Hrde.RepositoryLayer.Tests.Integration.Serialization.ObjectDocumentSerializerTests has a number of tests which demonstrate the de/serialization of the entities. Debug through these tests until the mechanism is understood.
+
