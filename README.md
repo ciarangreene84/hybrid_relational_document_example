@@ -2,6 +2,17 @@
 
 The purpose of this repo is to provide an example of a hybrid relational/document database which was sketched as a proof of concept/experiment. This example uses C# and MS SQL 2016.
 
+## Setup
+
+1. Clone/download this repo.
+2. Create the database by either:
+
+⋅⋅* Open the solution in Visual Studio and publish the database project to a HRDE database on your localhost.
+
+⋅⋅* Create a HRDE on your localhost and execute the ./Hrde.Database/dbo/Tables/Accounts.sql script.
+
+3. Open the solution in Visual Studio and run all unit tests.
+
 ## Problem
 
 We have a system which is deployed in multiple different territories. There is *universal* data structures/constraints/rules that hold true for all territories. There are also *specific* data structures/constraints/rules that apply only in specific territories. 
