@@ -10,13 +10,13 @@ The purpose of this repo is to provide an example of a hybrid relational/documen
     * Create a HRDE on your localhost and execute the ./Hrde.Database/dbo/Tables/Accounts.sql script.
 3. Open the solution in Visual Studio and run all unit tests.
 
-## Problem
+### Problem
 
 We have a system which is deployed in multiple different territories. There is *universal* data structures/constraints/rules that hold true for all territories. There are also *specific* data structures/constraints/rules that apply only in specific territories. 
 
 The problem is that the database must be strict enough to enforce the *universal* data structures/constraints/rules but also flexible enough to enable rapid re-use.
 
-## Solution
+### Solution
 
 Relational databases can provide strict rules, but with the downside that they are not very flexible. In order to add a new property, for example, one must update the tables/views/functions, data access layer, etc.
 
@@ -26,11 +26,17 @@ This example solution to problem is to create a hybrid relational/document datab
 
 ![Relational/Document split example](Example.png)
 
-## Downsides
+### Downsides
 
 Such a hybrid is never going to be as fast as either a purely relational or document database. Understanding how entites are packed and unpacked from the database, while not overly complex, requires care and attention. 
  
+## Packing/Unpacking
 
+Key to the hybrid database solution is how the entities are packed/unpacked. 
 
+There will be two representations of each entity. One represents the entity as it will be stored in the database and one represents the entity as it will be used in code.
 
 ![Object Document Container Explaination](ObjectDocumentContainerExplaination.png)
+
+In the above example, we have an Account entity. In the data access layer (and database), we have an AccountId, Type, Name, ObjectDocument and ObjectHash. The AccountId, Type and Name are *universal* properties, meaning that *all* deployments of the system will have Accounts with those properties.
+
