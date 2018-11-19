@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using System;
 
-namespace Hrde.RepositoryLayer.Tests.Integration.Repositories
+namespace Hrde.RepositoryLayer.Tests.Integration
 {
     public class AbstractRepositoryTests
     {

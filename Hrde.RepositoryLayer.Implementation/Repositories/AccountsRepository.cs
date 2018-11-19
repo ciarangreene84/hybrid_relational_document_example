@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
+using Hrde.RepositoryLayer.Interfaces.Serialization;
 using DalModels = Hrde.DataAccessLayer.Interfaces.Models;
 
 namespace Hrde.RepositoryLayer.Implementation.Repositories
@@ -14,10 +15,10 @@ namespace Hrde.RepositoryLayer.Implementation.Repositories
     {
         private readonly ILogger<AccountsRepository> _logger;
 
-        private readonly ObjectDocumentSerializer _objectDocumentSerializer;
+        private readonly IObjectDocumentSerializer _objectDocumentSerializer;
         private readonly IAccountsDbContext _dbContext;
 
-        public AccountsRepository(ILogger<AccountsRepository> logger, ObjectDocumentSerializer objectDocumentSerializer, IAccountsDbContext dbContext)
+        public AccountsRepository(ILogger<AccountsRepository> logger, IObjectDocumentSerializer objectDocumentSerializer, IAccountsDbContext dbContext)
         {
             this._logger = logger;
 

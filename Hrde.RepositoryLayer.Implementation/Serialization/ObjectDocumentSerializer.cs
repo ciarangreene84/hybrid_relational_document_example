@@ -2,12 +2,13 @@
 using System.Linq;
 using AutoMapper;
 using Hrde.DataAccessLayer.Interfaces.Models;
+using Hrde.RepositoryLayer.Interfaces.Serialization;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace Hrde.RepositoryLayer.Implementation.Serialization
 {
-    public class ObjectDocumentSerializer
+    public class ObjectDocumentSerializer : IObjectDocumentSerializer
     {
         private readonly ILogger<ObjectDocumentSerializer> _logger;
         private readonly IMapper _mapper;
