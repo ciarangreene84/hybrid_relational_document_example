@@ -97,3 +97,8 @@ public async Task<int> InsertAccountAsync<T>(IDbTransaction dbTransaction, T acc
 }
 ```
 
+There are a number of tests in the Hrde.RepositoryLayer.Tests.Integration.Repositories.AccountsRepositoryTests. Debug through these tests until the mechanism is understood.
+
+# Conclusion
+
+This example hopefully shows how the hybrid database works in the Proof of Concept. The aim is to create some entity archetypes where the *universal* properties/structures/rules/constraints can be defined once in a core library and easily extended in territory specific deployments.
