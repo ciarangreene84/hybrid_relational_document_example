@@ -10,6 +10,9 @@ The purpose of this repo is to provide an example of a hybrid relational/documen
     * Create a HRDE on your localhost and execute the ./Hrde.Database/dbo/Tables/Accounts.sql script.
 3. Open the solution in Visual Studio and run all unit tests.
 
+4. Debug through Hrde.RepositoryLayer.Tests.Integration.Serialization.ObjectDocumentSerializerTests to understand the serialization.
+5. Debug through Hrde.RepositoryLayer.Tests.Integration.Repositories.AccountsRepositoryTests to understand the complete process.
+
 ### Problem
 
 We have a system which is deployed in multiple different territories. There is *universal* data structures/constraints/rules that hold true for all territories. There are also *specific* data structures/constraints/rules that apply only in specific territories. 
@@ -101,4 +104,4 @@ There are a number of tests in the Hrde.RepositoryLayer.Tests.Integration.Reposi
 
 # Conclusion
 
-This example hopefully shows how the hybrid database works in the Proof of Concept. The aim is to create some entity archetypes where the *universal* properties/structures/rules/constraints can be defined once in a core library and easily extended in territory specific deployments.
+This example hopefully shows how the hybrid database works in the Proof of Concept. The aim is to create some entity archetypes where the *universal* properties/structures/rules/constraints can be defined once in a core library and easily extended in territory specific deployments. 
