@@ -105,3 +105,8 @@ There are a number of tests in the Hrde.RepositoryLayer.Tests.Integration.Reposi
 # Conclusion
 
 This example hopefully shows how the hybrid database works in the Proof of Concept. The aim is to create some entity archetypes where the *universal* properties/structures/rules/constraints can be defined once in a core library and easily extended in territory specific deployments. 
+
+
+# Footnote
+A test was performed on this design of a table with 4 relational columns and a document column. The table was populated with 5,000,000 records, each record having 60 properties of different types (numbers, dates, text). Blocks of 1,000 records were randomly
+retrieved in 0.3-0.4 seconds.
