@@ -109,5 +109,4 @@ This example hopefully shows how the hybrid database works in the Proof of Conce
 
 ## Footnote
 
-A test was performed on this design of a table with 4 relational columns and a document column. The table was populated with 5,000,000 records, each record having 60 properties of different types (numbers, dates, text). Blocks of 1,000 records were randomly
-retrieved in 0.3-0.4 seconds.
+A test was performed on this design of a table with 4 relational columns and a document column. The table was populated with 5,000,000 records, each record having 60 properties within the document column of different types (numbers, dates, text). Blocks of 1,000 records were randomly retrieved in 0.3-0.4 seconds.
